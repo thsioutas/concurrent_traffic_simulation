@@ -19,7 +19,7 @@ template <class T>
 class MessageQueue
 {
 public:
-    void send(T &&TrafficLightPhase);
+    void send(T &&msg);
     T receive();
 private:
     std::deque<T> _queue;
